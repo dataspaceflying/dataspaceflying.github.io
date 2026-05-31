@@ -166,23 +166,28 @@
       border-bottom: 1px solid rgba(255,255,255,0.05);
       box-shadow: none !important;
     }
-    .logoheader{
-      background: transparent !important;
-      height: 64px !important;
-      width: auto !important;
-      max-width: 30vw;
-      border-radius: 12px;
-      opacity: 1;
-      filter: none;
+    /* ---- Logo: text-based BLA ---- */
+    .logo-text{
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none !important;
+      font-family: 'Anton','Oswald',sans-serif !important;
+      font-weight: 900 !important;
+      font-size: 38px !important;
+      letter-spacing: -.02em !important;
+      line-height: 1 !important;
+      background: linear-gradient(90deg, #ffffff 0%, #fff4d0 50%, #ffd97a 100%) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
       transition: opacity .25s ease;
+      padding: 0 4px;
     }
-    .logoheader:hover{ opacity: .9; }
-    @media (max-width: 900px){
-      .logoheader{ height: 54px !important; }
-    }
-    @media (max-width: 540px){
-      .logoheader{ height: 46px !important; }
-    }
+    .logo-text:hover{ opacity: .85; }
+    .logo-text .logo-bla-b{ color: #4de8ff; -webkit-text-fill-color: #4de8ff; background: none; }
+    @media (max-width: 900px){ .logo-text{ font-size: 32px !important; } }
+    @media (max-width: 540px){ .logo-text{ font-size: 28px !important; } }
     .headerbtn, .btntext .headerbtn, .headerbtn{
       background: transparent !important;
       color: rgba(255,245,230,.78) !important;
@@ -1882,11 +1887,20 @@
       padding-bottom: 48px;
     }
     .footer-brand .footer-logo{
-      height: 56px; width:auto; margin-bottom: 18px; display:block;
-      border-radius: 10px;
-      opacity: 1;
-      filter: none;
+      display: inline-flex;
+      font-family: 'Anton','Oswald',sans-serif !important;
+      font-weight: 900 !important;
+      font-size: 32px !important;
+      letter-spacing: -.02em !important;
+      line-height: 1 !important;
+      background: linear-gradient(90deg, #ffffff 0%, #fff4d0 50%, #ffd97a 100%) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
+      margin-bottom: 18px;
     }
+    .footer-brand .footer-logo .logo-bla-b{ color: #4de8ff; -webkit-text-fill-color: #4de8ff; background: none; }
     .footer-brand p{
       color: rgba(255,245,230,.65);
       font-size: 0.85rem;
@@ -2267,8 +2281,7 @@
     </defs>
   </svg>
   <section id="top" data-w-id="d8348b62-9688-1fc5-307c-4b75655f5d60" class="header"><a href=""
-      aria-current="page" class="logolinks w-inline-block w--current"><img src="frame-202131330264.png"
-        loading="lazy" alt="Borderless AI Limited logo" class="logoheader" /></a>
+      aria-current="page" class="logolinks w-inline-block w--current"><a href="index.html" class="logo-text"><span class="logo-bla-b">B</span>LA</a></a>
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
       role="banner" class="navbar w-nav">
       <div class="headernav w-container">
@@ -3079,7 +3092,7 @@ BorderlessAd is a global <strong>AI advertising and media technology company</st
       <div class="footer-grid">
         <!-- Brand block -->
         <div class="footer-brand">
-          <img src="frame-202131330264.png" loading="lazy" alt="Borderless AI Limited" class="footer-logo" />
+          <a href="index.html" class="footer-logo" style="text-decoration:none;"><span class="logo-bla-b">B</span>LA</a>
           <p>The AI-powered advertising and media platform helping brands grow globally across mobile (Android, iOS) and TV.</p>
           <div class="footer-social" aria-label="Social media">
             <a href="javascript:void(0)" onclick="return false;" aria-label="LinkedIn">in</a>
