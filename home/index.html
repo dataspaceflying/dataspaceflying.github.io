@@ -166,51 +166,16 @@
       border-bottom: 1px solid rgba(255,255,255,0.05);
       box-shadow: none !important;
     }
-    /* ---- Logo: BLA + BorderlessAd ---- */
-    .logo-text{
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-decoration: none !important;
-      transition: opacity .25s ease, filter .25s ease;
-      padding: 0;
-      gap: 0;
+    /* ---- Logo image ---- */
+    .logo-img{
+      height: 48px !important;
+      width: auto !important;
+      display: block;
+      transition: opacity .25s ease;
     }
-    .logo-text:hover{ opacity: .85; }
-    .logo-bla{
-      font-family: 'Anton','Oswald',sans-serif !important;
-      font-weight: 900 !important;
-      font-size: 26px !important;
-      letter-spacing: .04em !important;
-      line-height: 1 !important;
-      background: linear-gradient(135deg, #4de8ff 0%, #ffffff 40%, #ffd97a 100%) !important;
-      -webkit-background-clip: text !important;
-      background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-      color: transparent !important;
-    }
-    .logo-bla .logo-bla-b{
-      -webkit-text-fill-color: #4de8ff !important;
-      color: #4de8ff !important;
-      background: none;
-      filter: drop-shadow(0 0 6px rgba(77,232,255,.25));
-    }
-    .logo-fullname{
-      font-family: 'Inter', sans-serif !important;
-      font-size: 8px !important;
-      font-weight: 600 !important;
-      letter-spacing: .30em !important;
-      text-transform: uppercase;
-      background: linear-gradient(90deg, rgba(77,232,255,.7) 0%, rgba(255,245,230,.6) 100%) !important;
-      -webkit-background-clip: text !important;
-      background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-      color: transparent !important;
-      margin-top: 3px;
-      line-height: 1;
-    }
-    @media (max-width: 900px){ .logo-bla{ font-size: 22px !important; } .logo-fullname{ font-size: 7px !important; } }
-    @media (max-width: 540px){ .logo-bla{ font-size: 20px !important; } .logo-fullname{ font-size: 6px !important; } }
+    .logo-img:hover{ opacity: .85; }
+    @media (max-width: 900px){ .logo-img{ height: 40px !important; } }
+    @media (max-width: 540px){ .logo-img{ height: 34px !important; } }
     .headerbtn, .btntext .headerbtn, .headerbtn{
       background: transparent !important;
       color: rgba(255,245,230,.78) !important;
@@ -1909,45 +1874,12 @@
       gap: 48px;
       padding-bottom: 48px;
     }
-    .footer-brand .footer-logo{
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-decoration: none;
+    .footer-logo-img{
+      height: 42px; width: auto; display: block;
+      margin-bottom: 14px;
+      transition: opacity .25s ease;
     }
-    .footer-brand .footer-logo .logo-bla{
-      font-family: 'Anton','Oswald',sans-serif !important;
-      font-weight: 900 !important;
-      font-size: 32px !important;
-      letter-spacing: .04em !important;
-      line-height: 1 !important;
-      background: linear-gradient(135deg, #4de8ff 0%, #ffffff 40%, #ffd97a 100%) !important;
-      -webkit-background-clip: text !important;
-      background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-      color: transparent !important;
-      margin-bottom: 0;
-    }
-    .footer-brand .footer-logo .logo-bla .logo-bla-b{
-      -webkit-text-fill-color: #4de8ff !important;
-      color: #4de8ff !important;
-      background: none;
-      filter: drop-shadow(0 0 6px rgba(77,232,255,.25));
-    }
-    .footer-brand .footer-logo .logo-fullname{
-      font-family: 'Inter', sans-serif !important;
-      font-size: 9px !important;
-      font-weight: 600 !important;
-      letter-spacing: .30em !important;
-      text-transform: uppercase;
-      background: linear-gradient(90deg, rgba(77,232,255,.7) 0%, rgba(255,245,230,.6) 100%) !important;
-      -webkit-background-clip: text !important;
-      background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-      color: transparent !important;
-      margin-top: 3px;
-      line-height: 1;
-    }
+    .footer-logo-img:hover{ opacity: .85; }
     .footer-brand p{
       color: rgba(255,245,230,.65);
       font-size: 0.85rem;
@@ -2328,7 +2260,7 @@
     </defs>
   </svg>
   <section id="top" data-w-id="d8348b62-9688-1fc5-307c-4b75655f5d60" class="header"><a href=""
-      aria-current="page" class="logolinks w-inline-block w--current"><a href="index.html" class="logo-text"><span class="logo-bla"><span class="logo-bla-b">B</span>LA</span><span class="logo-fullname">BorderlessAd</span></a></a>
+      aria-current="page" class="logolinks w-inline-block w--current"><a href="index.html"><img src="logo.svg" alt="BLA BorderlessAd" class="logo-img" /></a></a>
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
       role="banner" class="navbar w-nav">
       <div class="headernav w-container">
@@ -3139,7 +3071,7 @@ BorderlessAd is a global <strong>AI advertising and media technology company</st
       <div class="footer-grid">
         <!-- Brand block -->
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo" style="text-decoration:none;"><span class="logo-bla"><span class="logo-bla-b">B</span>LA</span><span class="logo-fullname">BorderlessAd</span></a>
+          <a href="index.html"><img src="logo.svg" alt="BLA BorderlessAd" class="footer-logo-img" /></a>
           <p>The AI-powered advertising and media platform helping brands grow globally across mobile (Android, iOS) and TV.</p>
           <div class="footer-social" aria-label="Social media">
             <a href="javascript:void(0)" onclick="return false;" aria-label="LinkedIn">in</a>
