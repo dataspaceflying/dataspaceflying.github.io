@@ -172,13 +172,11 @@
       width: auto !important;
       max-width: 30vw;
       border-radius: 12px;
-      opacity: .96;
-      filter: brightness(1.08) contrast(1.02) saturate(1.15);
-      -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,.75) 78%, rgba(0,0,0,.3) 92%, transparent 100%);
-              mask-image: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,.75) 78%, rgba(0,0,0,.3) 92%, transparent 100%);
-      transition: opacity .25s ease, filter .25s ease;
+      opacity: 1;
+      filter: none;
+      transition: opacity .25s ease;
     }
-    .logoheader:hover{ opacity: 1; filter: brightness(1.15) contrast(1.05) saturate(1.2); }
+    .logoheader:hover{ opacity: .9; }
     @media (max-width: 900px){
       .logoheader{ height: 54px !important; }
     }
@@ -1886,10 +1884,8 @@
     .footer-brand .footer-logo{
       height: 56px; width:auto; margin-bottom: 18px; display:block;
       border-radius: 10px;
-      opacity: .92;
-      filter: brightness(1.05) contrast(1) saturate(1.1);
-      -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,.7) 78%, rgba(0,0,0,.25) 92%, transparent 100%);
-              mask-image: radial-gradient(ellipse at center, #000 55%, rgba(0,0,0,.7) 78%, rgba(0,0,0,.25) 92%, transparent 100%);
+      opacity: 1;
+      filter: none;
     }
     .footer-brand p{
       color: rgba(255,245,230,.65);
@@ -2280,7 +2276,6 @@
           <div class="w-icon-nav-menu"></div>
         </div>
         <nav class="topnav" id="mainTopnav">
-          <a href="index.html">Home</a>
         </nav>
         <button class="mobile-hamburger" onclick="var n=document.getElementById('mainTopnav');n.classList.toggle('mobile-open');this.classList.toggle('is-active');"><span></span></button>
       </div>
