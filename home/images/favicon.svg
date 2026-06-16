@@ -1,4 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#1a1530"/>
-  <path d="M7 6h9c3.5 0 6 1.8 6 5 0 2-1.2 3.5-3 4.2 2.5.5 4 2.3 4 5 0 3.3-2.7 5.8-6.5 5.8H7V6zm4 7.5h4c1.8 0 3-.9 3-2.3s-1.2-2.3-3-2.3h-4v4.6zm0 8h4.5c2 0 3.2-1 3.2-2.7s-1.2-2.7-3.2-2.7H11v5.4z" fill="#4de8ff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1530"/>
+      <stop offset="100%" stop-color="#0e0b1a"/>
+    </linearGradient>
+    <linearGradient id="blaG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4de8ff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd97a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- B as path for pixel-perfect rendering at any size -->
+  <path d="M14 16h16c6 0 10 3 10 8.5 0 3.5-2 6-5 7 4 .8 6.5 3.8 6.5 8 0 5.5-4.5 8.5-11 8.5H14V16zm7 13h7c3 0 5-1.5 5-4s-2-4-5-4h-7v8zm0 13.5h8c3.5 0 5.5-1.5 5.5-4.5s-2-4.5-5.5-4.5h-8v9z" fill="url(#blaG)"/>
+  <path d="M50 16h3v32h-3z" fill="#ffd97a" opacity=".7"/>
+  <path d="M56 16h3v32h-3z" fill="#ffd97a" opacity=".4"/>
 </svg>
