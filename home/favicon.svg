@@ -6,15 +6,13 @@
     </linearGradient>
     <linearGradient id="blaG" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#4de8ff"/>
-      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#ffd97a"/>
-    </linearGradient>
-    <linearGradient id="subG" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#4de8ff" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#fff5e6" stop-opacity="0.7"/>
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <text x="8" y="38" font-family="Anton,Oswald,sans-serif" font-weight="900" font-size="28" letter-spacing="1" fill="url(#blaG)">BLA</text>
-  <text x="8" y="52" font-family="Inter,sans-serif" font-weight="600" font-size="5.5" letter-spacing="1.8" fill="url(#subG)">BORDERLESSAD</text>
+  <!-- B as path for pixel-perfect rendering at any size -->
+  <path d="M14 16h16c6 0 10 3 10 8.5 0 3.5-2 6-5 7 4 .8 6.5 3.8 6.5 8 0 5.5-4.5 8.5-11 8.5H14V16zm7 13h7c3 0 5-1.5 5-4s-2-4-5-4h-7v8zm0 13.5h8c3.5 0 5.5-1.5 5.5-4.5s-2-4.5-5.5-4.5h-8v9z" fill="url(#blaG)"/>
+  <path d="M50 16h3v32h-3z" fill="#ffd97a" opacity=".7"/>
+  <path d="M56 16h3v32h-3z" fill="#ffd97a" opacity=".4"/>
 </svg>
